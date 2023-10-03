@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembrete de Beber Água</title>
+ 
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lembrete de Beber Água</h1>
+        <p>Quantidade recomendada: 10 copos por dia</p>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <button id="drink-btn">Beber Água</button>
+    </div>
+    <script src="script.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBS_1dX7PYU5mKCyyg_jkifnllBIRNabEc",
+          authDomain: "appagua-aa4cb.firebaseapp.com",
+          projectId: "appagua-aa4cb",
+          storageBucket: "appagua-aa4cb.appspot.com",
+          messagingSenderId: "362944131228",
+          appId: "1:362944131228:web:07d445cd28bf7a45df7d59",
+          measurementId: "G-SWNK6LV9PC"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
